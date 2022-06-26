@@ -1,58 +1,64 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body{
     background-color: #EEEEEE;
 }
-.logobox{
-margin-top: 200px;
-margin-left: 280px;
+.mainbody{
+    display: flex;
+    
 }
- h1{
-    font-family: Helvetica;
-    font-size: 52px;
+.logobox{
+margin-top: 15rem;
+margin-left: 15rem;
+font-family: Helvetica;
+    font-size: 30px;
     color: #1877f2;
-    margin:2px;
- }
+    font-weight: bolder;
+
+  
+}
+
  .container{
-    height: 370px;
-    width: 400px;
-    margin-top: -194px;
-    margin-right: 200px;
+    
+
+    margin-left: 8rem;
     float: right;
+    margin-top: 10rem;
     border-radius: 12px;
     background-color: #ffffff;
-        width: 400px;
-        height: 380px;
-        text-align: center;
+        width: 25rem;
+        height: 22rem;
+      
         border: none;
         padding: 10px;
         box-shadow: 5px 10px 8px #888888;
 }
-.form{
-    float: right;
-    margin-top: 15px;
-    background-color: #ffffff;
-    width: 100%;
- }
+
 
 
 .form  input{
-    padding: 18px;
-    width: 80%;
-    margin: 8px;
+    padding: 14px;
+    width: 95%;
+    margin-bottom: .5rem;
+    margin-top: .5rem;
+    margin-left: .3rem;
     border-radius: 5px;
-    border: .5px solid black;
+    border: .01rem dotted black;
     font-size: 16px;
 }
 .btn{
     width: 88%;
     font-size: 20px;
     padding: 13px;
+    padding-left: 1.5rem;
     border-radius: 7px;
-    margin-top: 10px;
+    margin-top: 1rem;
+    margin-left: .3rem;
+    height: 3rem;
     background-color:  #1877f2;
     opacity: 95%;
     color: white;
@@ -63,22 +69,35 @@ margin-left: 280px;
 .btn:hover{
     opacity: 100%;
 }
-p{
-    color:#1877f2;
- margin-top:20px;
- text-decoration: none;
-    
+.forgotPassword{
+    font-family: sans-serif;
+ margin-top:1rem; 
+ margin-left: 8.5rem; 
+ font-weight: 500;
+ font-size: 14px;
+}
+a:link, a:visited, a:hover, a:active{
+    text-decoration: none;
+
+    color: #1877f2;
+}
+a:hover{
+    text-decoration: underline;
+    padding-bottom: .3rem;
 }
 
 .line{
     width: 90%;
     margin-left: 20px;
     margin-top: 25px;
+    height: .1px;
+    background-color: black;
 }
 .anotherBtn{
-    margin-top: 25px;
+    margin-top: 23px;
     margin-bottom: 18px;
     padding: 14px;
+    margin-left: 6.5rem;
     font-size: 17px;
     background-color: #42b72a;
     opacity: 90%;
@@ -92,9 +111,9 @@ p{
 }
 .bottom{
     
-    margin-top: 250px;
+    margin-top: 1.5rem;
     float: right;
-    margin-right:-360px;
+    margin-right: 18rem;
     color: black;
 }
 
@@ -102,5 +121,62 @@ p{
     color:black;
     font-size: 28px;
     font-family: sans-serif;
+    margin-top: 19.5rem;
+ margin-left: -17rem;
 }
 
+
+@media screen and (max-width: 600px){
+
+    .mainbody{
+        flex-direction: column;
+    }
+    .logobox{
+        margin-top: 3rem;
+        margin-left: 8rem;
+        
+    }
+    .heading{
+        font-size: 23px;
+        font-weight: 500;
+        margin-left: 3rem;
+        text-align: center;
+        margin-right: 3rem;
+        margin-top: .7rem;
+    }
+
+    
+
+
+        .container{
+
+            margin-top: 3rem;
+            margin-left: 3.5rem;
+            float: right;
+            border-radius: 12px;
+            background-color: #ffffff;
+                width: 25rem;
+                height: 22rem;
+                text-align: center;
+                border: none;
+                padding: 10px;
+                box-shadow: 5px 10px 8px #888888;
+
+    
+}
+
+.bottom{
+    margin-top: 1rem;
+    margin-right: 7.5rem;
+    
+}
+.forgotPassword{
+    margin-top:1rem; 
+    margin-left: 1.6rem; 
+    font-weight: 500;
+   }
+
+.anotherBtn{
+    margin-left: .5rem;
+}
+}
